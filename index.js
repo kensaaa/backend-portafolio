@@ -14,6 +14,7 @@ app.use(express.static('public'))
 app.use( express.json() )
 
 app.use( '/api/auth/', require('./routes/auth') )
+app.use( '/api/project/', require('./routes/project') )
 
 
 app.listen(process.env.PORT, () => {
