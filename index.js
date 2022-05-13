@@ -15,6 +15,7 @@ app.use( express.json() )
 
 app.use( '/api/auth/', require('./routes/auth') )
 app.use( '/api/project/', require('./routes/project') )
+app.use( '/api/email/', require('./routes/email') )
 
 
 app.listen(process.env.PORT, () => {
